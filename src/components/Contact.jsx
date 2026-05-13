@@ -27,7 +27,7 @@ export default function Contact() {
               Let's Build Something <em style={{ fontStyle:'italic', color:'var(--accent)' }}>Together</em>
             </h2>
             <p style={{ color:'var(--muted)', fontSize:'0.97rem', lineHeight:1.8, marginBottom:'2rem' }}>
-              Open to internships, research collaborations, freelance AI/ML projects, and full-time roles in AI engineering. Feel free to reach out through any of the channels below.
+              Open to work, research collaborations, freelance AI/ML projects, and full-time roles in AI engineering. Feel free to reach out through any of the channels below.
             </p>
             <div style={{ display:'flex', flexDirection:'column', gap:'1rem' }}>
               {contactItems.map(item => (
@@ -53,7 +53,7 @@ export default function Contact() {
                 <span style={{ display:'inline-block', width:10, height:10, borderRadius:'50%', background:'var(--accent3)', marginRight:'0.5rem', animation:'pulse 2s ease-in-out infinite' }} />
                 Open to Opportunities
               </p>
-              <p style={{ fontSize:'0.8rem', color:'var(--muted)', marginTop:'0.5rem' }}>Actively seeking internships and AI/ML engineering roles</p>
+              <p style={{ fontSize:'0.8rem', color:'var(--muted)', marginTop:'0.5rem' }}>Aspiring AI/ML Engineer | Open to New Opportunities</p>
             </div>
             <div style={{ background:'var(--card)', border:'1px solid var(--border)', borderRadius:10, padding:'2rem', textAlign:'center' }}>
               <p style={{ fontSize:'0.75rem', fontFamily:"'DM Mono', monospace", color:'var(--muted)', letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'1rem' }}>Preferred Work</p>
