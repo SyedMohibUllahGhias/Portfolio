@@ -23,7 +23,7 @@ export default function Navbar() {
         position: 'fixed', top: 0, left: 0, right: 0, zIndex: 100,
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         padding: '1.25rem 4rem',
-        background: scrolled ? 'rgba(10,12,16,0.92)' : 'rgba(10,12,16,0.6)',
+        background: scrolled ? 'rgba(var(--bg-rgb),0.92)' : 'rgba(var(--bg-rgb),0.6)',
         backdropFilter: 'blur(12px)',
         borderBottom: `1px solid var(--border)`,
         transition: 'background 0.3s',
@@ -79,7 +79,7 @@ export default function Navbar() {
       {/* Mobile overlay */}
       {open && (
         <div style={{
-          position: 'fixed', inset: 0, background: 'rgba(10,12,16,0.98)',
+          position: 'fixed', inset: 0, background: 'rgba(var(--bg-rgb),0.98)',
           backdropFilter: 'blur(12px)', zIndex: 99,
           display: 'flex', flexDirection: 'column',
           alignItems: 'center', justifyContent: 'center', gap: '2.5rem',

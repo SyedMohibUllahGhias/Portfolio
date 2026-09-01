@@ -16,7 +16,7 @@ const codeLines = [
   { ln:'12', parts: [{ c:'va', t:'result' }, { c:'', t:' = ' }, { c:'kw', t:'await' }, { c:'fn', t:' Runner.run' }, { c:'', t:'(' }, { c:'va', t:'researcher' }, { c:'', t:')' }] },
 ];
 
-const colors = { kw:'#ff79c6', fn:'#8be9fd', str:'#f1fa8c', cm:'#6272a4', va:'var(--accent3)', '':'var(--text)' };
+const colors = { kw:'#ff79c6', fn:'#8be9fd', str:'#f1fa8c', cm:'#6272a4', va:'#5eead4', '':'#e8eaf0' };
 
 export default function Hero() {
   return (
@@ -69,8 +69,8 @@ export default function Hero() {
                 background:'var(--accent)', color:'#000', transition:'all 0.25s',
                 fontFamily:"'Outfit', sans-serif",
               }}
-              onMouseEnter={e => { e.currentTarget.style.background='#fff'; e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 32px rgba(0,212,255,0.3)'; }}
-              onMouseLeave={e => { e.currentTarget.style.background='var(--accent)'; e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
+              onMouseEnter={e => { e.currentTarget.style.background='var(--text)'; e.currentTarget.style.color='#fff'; e.currentTarget.style.transform='translateY(-2px)'; e.currentTarget.style.boxShadow='0 8px 32px rgba(0,145,179,0.25)'; }}
+              onMouseLeave={e => { e.currentTarget.style.background='var(--accent)'; e.currentTarget.style.color='#000'; e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow=''; }}
             >
               ▶ View Projects
             </button>
@@ -93,23 +93,23 @@ export default function Hero() {
 
         {/* Code Card */}
         <div style={{
-          background:'var(--card)', border:'1px solid var(--border)',
-          borderRadius:12, padding:'2rem', backdropFilter:'blur(8px)',
+          background:'#14161f', border:'1px solid rgba(255,255,255,0.08)',
+          borderRadius:12, padding:'2rem', boxShadow:'0 20px 50px rgba(20,22,25,0.12)',
           animation:'floatCard 6s ease-in-out infinite',
         }}>
-          <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', marginBottom:'1.5rem', paddingBottom:'1rem', borderBottom:'1px solid var(--border)' }}>
+          <div style={{ display:'flex', alignItems:'center', gap:'0.75rem', marginBottom:'1.5rem', paddingBottom:'1rem', borderBottom:'1px solid rgba(255,255,255,0.08)' }}>
             <div style={{ display:'flex', gap:6 }}>
               {['#ff5f57','#febc2e','#28c840'].map(c => (
                 <div key={c} style={{ width:10, height:10, borderRadius:'50%', background:c }} />
               ))}
             </div>
-            <span style={{ fontFamily:"'DM Mono', monospace", fontSize:'0.72rem', color:'var(--muted)' }}>
+            <span style={{ fontFamily:"'DM Mono', monospace", fontSize:'0.72rem', color:'#7d8290' }}>
               agent_pipeline.py
             </span>
           </div>
           {codeLines.map(line => (
             <div key={line.ln} style={{ fontFamily:"'DM Mono', monospace", fontSize:'0.78rem', lineHeight:2, display:'flex', gap:'1rem' }}>
-              <span style={{ color:'var(--muted)', minWidth:16, textAlign:'right' }}>{line.ln}</span>
+              <span style={{ color:'#7d8290', minWidth:16, textAlign:'right' }}>{line.ln}</span>
               <span>
                 {line.parts.map((p, i) => (
                   <span key={i} style={{ color: colors[p.c] || 'var(--text)' }}>{p.t}</span>
