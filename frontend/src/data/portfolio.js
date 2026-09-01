@@ -92,6 +92,6 @@ export const data = {
     phone: '+92 319 679 6967',
     linkedin: 'https://linkedin.com/in/syed-mohib-ullah-ghias',
     github: 'https://github.com/SyedMohibUllahGhias',
-    address: '6/6 SherShah Colony, Ichhra, Lahore, Punjab, Pakistan',
+    address: 'Lahore, Punjab, Pakistan',
   },
 };

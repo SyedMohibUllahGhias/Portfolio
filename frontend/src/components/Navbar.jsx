@@ -34,7 +34,7 @@ export default function Navbar() {
           color: 'var(--accent)',
           letterSpacing: '0.08em',
         }}>
-          SMUG<span style={{ color: 'var(--muted)' }}>.dev</span>
+          SMUG
         </a>
 
         {/* Desktop links */}
