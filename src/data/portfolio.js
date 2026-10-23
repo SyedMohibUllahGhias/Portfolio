@@ -1,0 +1,122 @@
+export const data = {
+  name: 'Syed Mohib Ullah Ghias',
+  title: 'AI Automation Engineer · Python Developer',
+  tagline: 'Agentic Systems · Multi-Agent Frameworks · LLM Pipelines',
+  summary:
+    'AI Automation Engineer and Python Developer focused on agentic AI, RAG applications, LLM-powered workflows, and full-stack development with React and Django. Building practical AI products with Python, Gemini API, LangChain, and modern web technologies.',
+  about: [
+    'I am a Computational Science student at the University of the Punjab, Lahore, expected to graduate in 2027. I build practical AI applications, including RAG chatbots and agentic workflows, and enjoy turning ideas into useful web products.',
+    'My work spans the full LLM stack: from embedding and retrieval pipelines with FAISS and LangChain, to orchestrating complex agentic workflows with LangGraph and OpenAI Agents SDK, to running everything locally via Ollama for zero-cost, privacy-preserving inference.',
+    'Alongside AI engineering, I work with full-stack web technologies including React and Django. I value clear architecture, maintainable code, and building reliable applications that solve real problems.',
+  ],
+  stats: [
+    { num: '5+', label: 'Production-ready AI projects shipped' },
+    { num: '3', label: 'Industry certifications earned' },
+    { num: '4+', label: 'LLM frameworks mastered' },
+    { num: '2027', label: 'Expected graduation (B.Sc. CS)' },
+  ],
+  skills: [
+    {
+      title: 'AI / ML Frameworks',
+      tags: ['OpenAI Agents SDK','LangChain','LangGraph','LlamaIndex','Transformers','RAG','Multi-Agent Systems','HITL Workflows'],
+    },
+    {
+      title: 'LLM APIs & Inference',
+      tags: ['OpenAI API','Anthropic Claude','Ollama (Local)','Open Router','Function Calling','Tool Use','Embeddings','Structured Outputs'],
+    },
+    {
+      title: 'Data & Databases',
+      tags: ['Python','Pandas','NumPy','PostgreSQL','MongoDB','MySQL','SQLAlchemy','ADBC','PyArrow','Matplotlib','Seaborn'],
+    },
+    {
+      title: 'Web Development & Tools',
+      tags: ['Django','Django REST Framework','React','JavaScript','HTML','CSS','FastAPI','Streamlit','Docker','Git / GitHub','VS Code','uv','Asyncio','Pydantic','.env secret mgmt','Jupyter Notebook'],
+    },
+  ],
+  experience: [
+    {
+      company: 'Arbisoft',
+      role: 'Software Engineering Intern | Full-Stack & Agentic AI',
+      period: 'September 2026 — Present',
+      location: 'Lahore, Punjab, Pakistan',
+      description: 'Developing software engineering skills across full-stack development and agentic AI workflows.',
+    },
+    {
+      company: 'ITEL Services',
+      role: 'AI/ML Engineer Intern',
+      period: 'July 2026 — Present',
+      location: 'Lahore, Punjab, Pakistan',
+      description: 'Building experience in AI and machine learning engineering.',
+    },
+  ],
+  projects: [
+    {
+      num: '01',
+      category: 'RAG Chatbot',
+      title: 'Online Ragify Chatbot',
+      desc: 'A deployed Retrieval-Augmented Generation chatbot with a Python backend powered by the Gemini API and a React frontend. Try the live application online.',
+      stack: ['Python','Gemini API','React','RAG'],
+      link: 'https://ragifychatbot.vercel.app/',
+      linkLabel: 'Try Live Demo',
+    },
+    {
+      num: '02',
+      category: 'RAG System',
+      title: 'RAG Chatbot',
+      desc: 'A fully offline Retrieval-Augmented Generation system that ingests text documents, builds a local FAISS vector store, and answers natural-language queries through a locally-hosted LLM via Ollama — with zero external API calls. Includes a FastAPI backend and an interactive Streamlit front-end.',
+      stack: ['Python','FastAPI','LangChain','FAISS','Ollama','Streamlit'],
+      link: 'https://github.com/SyedMohibUllahGhias',
+    },
+    {
+      num: '03',
+      category: 'Agentic AI',
+      title: 'Research Agent Pro',
+      desc: 'An advanced AI research assistant built on LangGraph for stateful, cyclical agentic workflows. Integrates Human-in-the-Loop (HITL) checkpoints for supervised decision-making, and uses SQLite for persistent session storage — enabling long-running research tasks with human oversight at critical decision nodes.',
+      stack: ['Python','LangGraph','Ollama','SQLite','HITL'],
+      link: 'https://github.com/SyedMohibUllahGhias',
+    },
+    {
+      num: '04',
+      category: 'Multi-Agent',
+      title: 'OpenAI Agents SDK Implementation',
+      desc: 'A production-grade multi-agent system using OpenAI Agents SDK, wired to local Llama 3.1 models through Ollama for completely free inference. Demonstrates Agent-as-Tool composition, structured Pydantic output validation, multi-turn state management, and fully async orchestration.',
+      stack: ['Python','OpenAI Agents SDK','Ollama','Pydantic','Asyncio','uv'],
+      link: 'https://github.com/SyedMohibUllahGhias',
+    },
+    {
+      num: '05',
+      category: 'Data Engineering',
+      title: 'Database to DataFrame',
+      desc: 'A high-performance data extraction tool engineered for large-scale PostgreSQL-to-Pandas pipelines. Leverages ADBC for columnar, zero-copy data transfer — bypassing traditional row-by-row fetching — paired with SQLAlchemy for robust connection management and query composition.',
+      stack: ['Python','PostgreSQL','Pandas','ADBC','SQLAlchemy'],
+      link: 'https://github.com/SyedMohibUllahGhias',
+    },
+    {
+      num: '06',
+      category: 'Automation',
+      title: 'Jupyter Notebook to PDF AI Agent',
+      desc: 'An automated AI-driven agent that handles the complete conversion of Jupyter Notebook (.ipynb) files into polished, publication-ready PDF documents. Streamlines a friction-heavy workflow common in data science and academic reporting using OpenAI\'s API.',
+      stack: ['Python','Jupyter','OpenAI API','PDF Generation'],
+      link: 'https://github.com/SyedMohibUllahGhias',
+    },
+  ],
+  education: {
+    degree: 'Bachelor of Science in Computer Science',
+    institution: 'University of the Punjab',
+    location: 'Lahore, Pakistan',
+    period: 'Sep 2023 — Sep 2027',
+    courses: ['Machine Learning','Natural Language Processing','Deep Learning','Data Structures & Algorithms','Database Systems','Linear Algebra','Probability & Statistics'],
+  },
+  certifications: [
+    { name: 'Google AI Essentials', issuer: 'Google' },
+    { name: 'Crash Course on Python', issuer: 'Google / Coursera' },
+    { name: 'AI Specialization (ML & DL)', issuer: 'NAVTTC / Corvit Systems' },
+  ],
+  contact: {
+    email: 'mohibghias123@gmail.com',
+    phone: '+92 319 679 6967',
+    linkedin: 'https://linkedin.com/in/syed-mohib-ullah-ghias',
+    github: 'https://github.com/SyedMohibUllahGhias',
+    address: 'Lahore, Punjab, Pakistan',
+  },
+};
